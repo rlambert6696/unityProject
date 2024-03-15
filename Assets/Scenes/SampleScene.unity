@@ -133,11 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7830431}
   - component: {fileID: 7830430}
-  - component: {fileID: 7830429}
   - component: {fileID: 7830428}
   - component: {fileID: 7830432}
   - component: {fileID: 7830433}
-  - component: {fileID: 7830434}
   m_Layer: 0
   m_Name: wall
   m_TagString: Untagged
@@ -166,22 +164,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7830429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7830427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29243bd4533d5d14da0560cec6051e70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wall: {fileID: 7830427}
-  spawnRate: 123123
-  heightOffset: 10
-  moveSpeed: 5
 --- !u!212 &7830430
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -242,7 +224,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7830427}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.9513, y: 3.304525, z: 0}
+  m_LocalPosition: {x: -0.06, y: 11.18, z: 0}
   m_LocalScale: {x: 3.8569114, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -287,21 +269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a892b00596298e40bde615bfa03200b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xRange: 15
-  yRange: 15
---- !u!114 &7830434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7830427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6b67cf29417d6e46973fa4948a79773, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 3.22
+  xRange: 90
+  yRange: 90
 --- !u!1 &344587447
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,6 +623,7 @@ GameObject:
   - component: {fileID: 1403048410}
   - component: {fileID: 1403048412}
   - component: {fileID: 1403048413}
+  - component: {fileID: 1403048414}
   m_Layer: 0
   m_Name: player_sprite
   m_TagString: MainCamera
@@ -781,6 +751,18 @@ MonoBehaviour:
   rb2d: {fileID: 1403048410}
   moveInput: {x: 5.61, y: 3.65}
   mainCamera: {fileID: 0}
+--- !u!114 &1403048414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403048405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58704e14ba71f884ab03dadd89cf7056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1618310203
 GameObject:
   m_ObjectHideFlags: 0
